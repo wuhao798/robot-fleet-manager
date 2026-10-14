@@ -1,0 +1,12 @@
+
+# Build output
+build/
+
+# Compiled files
+*.o
+*.a
+*.so
+
+# Editor and OS files
+.vscode/
+.DS_Store
