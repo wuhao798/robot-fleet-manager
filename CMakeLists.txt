@@ -48,3 +48,25 @@ target_compile_options(robot_test
 )
 
 add_test(NAME RobotTest COMMAND robot_test)
+add_executable(robot_manager_test
+    tests/robot_manager_test.cpp
+    src/Robot.cpp
+    src/RobotManager.cpp
+)
+
+target_include_directories(robot_manager_test
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
+target_compile_options(robot_manager_test
+    PRIVATE
+        -Wall
+        -Wextra
+        -Wpedantic
+)
+
+add_test(
+    NAME RobotManagerTest
+    COMMAND robot_manager_test
+)
