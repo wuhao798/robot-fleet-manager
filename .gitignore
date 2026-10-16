@@ -10,3 +10,7 @@ build/
 # Editor and OS files
 .vscode/
 .DS_Store
+
+# Local debug artifacts
+/build-debug/
+/debug/
